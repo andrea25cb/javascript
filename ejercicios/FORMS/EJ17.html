@@ -1,0 +1,34 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ17</title>
+    <script type="text/javascript" src="EJ17.js"></script>
+</head>
+
+<body>
+    <form action="CONTAR">
+        <fieldset>
+            <label>Si </label>
+            <input type="radio" value="si" name="pregunta"> <span id="sip"> 0 </span> - <span id="sip1"> 0 </span> %
+            <img src="barra.png" class="barras" style="width: 0px; height: 10px"> <br>
+            <label>No </label>
+            <input type="radio" value="no" name="pregunta"> <span id="nop"> 0 </span> - <span id="nop1"> 0 </span> %
+            <img src="barra.png" class="barras" style="width: 0px; height: 10px"> <br>
+            <label>No sabe </label>
+            <input type="radio" value="no_sabe" name="pregunta"> <span id="snp"> 0 </span> - <span id="snp1"> 0 </span> %
+            <img src="barra.png" class="barras" style="width: 0px; height: 10px"> <br>
+            <br><br>
+            <input type="button" value="OK" onclick="votar()"> <br> <br>
+            <p id="total"></p>
+        </fieldset>
+    </form>
+
+    </fieldset>
+</body>
+
+</html>

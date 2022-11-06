@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maximoCaracteres</title>
+    <script type="text/javascript" src="maxCaracteres.js"></script>
+
+</head>
+
+<body>
+    <div id="POItablediv">
+        <input type="button" id="addPOIbutton" value="Add POIs" /><br/><br/>
+        <table id="POITable" border="1">
+          <tr>
+            <td>POI</td>
+            <td>Latitude</td>
+            <td>Longitude</td>
+            <td>Delete?</td>
+            <td>Add Rows?</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td><input size=25 type="text" id="latbox" /></td>
+            <td><input size=25 type="text" id="lngbox" readonly=true/></td>
+            <td><input type="button" id="delPOIbutton" value="Delete" onclick="deleteRow(this)" /></td>
+            <td><input type="button" id="addmorePOIbutton" value="Add More POIs" onclick="insRow()" /></td>
+          </tr>
+        </table>
+        </div>
+</body>
+
+</html>
