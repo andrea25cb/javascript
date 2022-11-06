@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHORCADO</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    #reiniciar,
+    #video {
+        display: none;
+    }
+</style>
+
+<body>
+    <!-- <video controls autoplay id="video" width="500">
+        <source src="scream1.mp4" type='video/mp4'/>
+    </video> -->
+    <button class="music" onclick="play()">PLAY MUSIC</button>  <button class="music" onclick="pause()">STOP MUSIC</button>
+
+    <img id="imagen" alt="" width="200x">
+
+    <span id="vidas"></span>
+
+    <h1>
+        <span id="title">
+            EL AHORCADO
+        </span>
+    </h1>
+
+    <input id="reiniciar" onclick="reiniciar()" type="submit" value=""><br>
+    <span id="mensaje"></span>
+    <div id="ganapierde"></div>
+    <div id="palabra"></div>
+    <div id="le"><form id="letras" action=""></form></div>
+
+    <input id="start" onclick="principal()" type="submit" value="PLAY"><br>
+
+    <select id="categoria" name="categoria">
+        <option value="0">ELEGIR CATEGORIA</option> 
+        <option value="1">ANIMALES</option> 
+        <option value="2">ASIGNATURAS</option>
+        <option value="3">PAISES</option>
+    </select>
+
+    <br/>
+
+</body>
+
+</html>
