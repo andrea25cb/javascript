@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AÑADIR ELEMENTOS A TABLA</title>
+    <script type="text/javascript" src="/JQUERY/jquery-3.6.1.js"></script>
+    <script type="text/javascript" src="tablaJquery.js"></script>
+    <link type="text/css" rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+    <p><label>Código: </label>
+        <input type="text" id="cod"></p>
+    <p><label>Descripción: </label>
+        <input type="text" id="des"> <br></p>
+    <p><label>Cantidad: </label>
+        <input type="text" id="can"></p>
+    <p><label>Precio: </label>
+        <input type="text" id="pre"></p>
+    <input type="button" id="añadir" value="añadir"><br><br>
+    <!-- <input style="display: none;" id="aceptar" type="button" value="ACEPTAR MODIFICACIÓN" onclick="confirmarModificacion()"> -->
+    <br> <br>
+    <table id="tabla">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr></tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total</td>
+                <td id="total"></td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <table id="table">
+        <tr>
+            <th>Código</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+
+        </tr>
+        <tr>
+            <td class="c">1</td>
+            <td>Tornillo</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td class="c">2</td>
+            <td>Tuerca</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td class="c">3</td>
+            <td>Arandela</td>
+            <td>1</td>
+        </tr>
+    </table>
+</body>
+
+</html>
